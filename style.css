@@ -406,6 +406,14 @@ body {
   margin: 80px auto 40px;
   padding: 0 20px;
 }
-
+.logo {
+  background: transparent;
+  color: #d4af37; /* Dourado do seu site */
+  text-shadow: 
+    0 0 10px rgba(212, 175, 55, 0.7),
+    0 0 20px rgba(212, 175, 55, 0.5);
+  border: none; /* Remove qualquer borda */
+  mix-blend-mode: screen; /* Faz o texto "interagir" com o fundo */
+}
 
 
