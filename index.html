@@ -57,11 +57,28 @@
                 <p>Este ebook é apenas uma amostra do nosso conhecimento em bem-estar natural.</p>
                 <p>Em nosso site principal você encontra produtos completos sobre:</p>
 
-                <div class="product-images">
-                    <img src="assets/images/ds.png" alt="Deficiências Silenciosas">
-                    <img src="assets/images/detoxdiva.png" alt="Detox Diva">
-                    <img src="assets/images/semaglutida.png" alt="Semaglutida">
-                </div>
+               <div class="product-images">
+    <div class="flip-container" onclick="flipCard(this)">
+        <div class="flip-card">
+            <div class="flip-front"><img src="assets/images/semaglutida.png" alt="Semaglutida"></div>
+            <div class="flip-back"><img src="assets/images/semaglutida-bonus.png" alt="Selo Semaglutida"></div>
+        </div>
+    </div>
+    
+    <div class="flip-container" onclick="flipCard(this)">
+        <div class="flip-card">
+            <div class="flip-front"><img src="assets/images/instagram.png" alt="Instagram"></div>
+            <div class="flip-back"><img src="assets/images/instagram-bonus.png" alt="Selo Instagram"></div>
+        </div>
+    </div>
+    
+    <div class="flip-container" onclick="flipCard(this)">
+        <div class="flip-card">
+            <div class="flip-front"><img src="assets/images/ds.png" alt="DS"></div>
+            <div class="flip-back"><img src="assets/images/ds-bonus.png" alt="Selo DS"></div>
+        </div>
+    </div>
+</div>
 
                 <ul class="product-list">
                     <li>
@@ -171,5 +188,10 @@
             <img src="assets/images/logo_herhenbar.png" alt="Herhenbar Premium Logo" style="margin-top: 15px;">
         </footer>
     </div>
+<script>
+function flipCard(container) {
+    container.classList.toggle('flipped');
+}
+</script>
 </body>
 </html>
