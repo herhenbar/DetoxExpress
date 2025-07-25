@@ -468,3 +468,18 @@ body {
     position: relative;
     z-index: 2;
 }
+
+
+.flip-container.flipped .flip-back img {
+    width: 150% !important;
+    max-width: 400px !important;
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .flip-container.flipped .flip-back img {
+        width: 200% !important;
+        max-width: 500px !important;
+        transform: scale(1.5);
+    }
+}
