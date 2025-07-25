@@ -470,4 +470,21 @@ body {
 }
 
 
-
+@media (max-width: 768px) {
+    .product-images {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    
+    .flip-container {
+        width: 100% !important;
+        max-width: 320px !important;
+        margin-bottom: 30px !important;
+    }
+    
+    .flip-front img, .flip-back img {
+        width: 100% !important;
+        max-width: 320px !important;
+        height: auto !important;
+    }
+}
