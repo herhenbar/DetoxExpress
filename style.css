@@ -471,24 +471,14 @@ body {
 
 
 .flip-container.flipped .flip-back img {
-    width: 300% !important;
-    max-width: none !important;
-    transform: scale(2);
-    position: relative;
-    z-index: 999;
+    width: 100% !important;
+    max-width: 350px !important;
 }
 
 @media (max-width: 768px) {
     .flip-container.flipped .flip-back img {
-        width: 400% !important;
-        transform: scale(2.5);
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(2.5);
-        z-index: 999;
-        background: rgba(0,0,0,0.9);
-        padding: 20px;
-        border-radius: 10px;
+        width: 100% !important;
+        max-width: 280px !important;
+        transform: scale(1.3);
     }
 }
