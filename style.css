@@ -488,3 +488,24 @@ body {
         height: auto !important;
     }
 }
+
+.flip-container::after {
+    content: "👆 Toque aqui";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #d4af37;
+    font-size: 12px;
+    animation: pulse 2s infinite;
+    pointer-events: none;
+}
+
+.flip-container.flipped::after {
+    content: "👆 Toque para voltar";
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 1; }
+}
